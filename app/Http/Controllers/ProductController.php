@@ -13,7 +13,7 @@ class ProductController extends Controller
     public function index()
     {
         return ProductsResourse::collection(Product::cursorPaginate(20));
-    }
+    } 
     public function store(StoreProductRequest $request)
     {
         //
